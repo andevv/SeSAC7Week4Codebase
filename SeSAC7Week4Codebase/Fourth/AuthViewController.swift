@@ -39,6 +39,7 @@ class AuthViewController: UIViewController {
         
         emailTextField.placeholder = "나이를 선택해주세요"
         emailTextField.keyboardType = .numberPad
+        emailTextField.inputView = UIPickerView()
         
         return emailTextField
     }()
@@ -52,13 +53,20 @@ class AuthViewController: UIViewController {
         configureView()
         print("viewDidLoad 끝")
         
-        
+        passwordTextField.delegate = self
     }
     
-    
-    
-    
 }
+
+extension AuthViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print(#function)
+        view.endEditing(true)
+        return true
+    }
+}
+
 
 // MARK: - UI Setup
 extension AuthViewController: ViewDesignProtocol {
