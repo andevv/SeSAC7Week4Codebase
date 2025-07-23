@@ -61,22 +61,22 @@ class ViewController: UIViewController {
     
     @objc func goButtonClicked() {
         
-        print(BMI.name)
-        print(bmi.height, bmi.weight)
-        
-        print(bmi.result)
-        
-        bmi.result = "sessac"
-        
-        print(BMI.name)
-        
-        let result = bmi.weight / (bmi.height * bmi.height)
-        
-        if result < 18.5 {
-            print("저체중")
-        } else {
-            print("정상")
-        }
+        //        print(BMI.name)
+        //        print(bmi.height, bmi.weight)
+        //
+        //        print(bmi.result)
+        //
+        //        bmi.result = "sessac"
+        //
+        //        print(BMI.name)
+        //
+        //        let result = bmi.weight / (bmi.height * bmi.height)
+        //
+        //        if result < 18.5 {
+        //            print("저체중")
+        //        } else {
+        //            print("정상")
+        //        }
         
         //        guard let height = heightTextField.text, height.count > 2 else {
         //            print("height 2글자 미만임")
@@ -117,8 +117,8 @@ class ViewController: UIViewController {
         
         
         //스토리보드 없을 때
-        //        let vc = ResultViewController()
-        //        present(vc, animated: true)
+        let vc = MarketViewController()
+        present(vc, animated: true)
     }
 }
 
