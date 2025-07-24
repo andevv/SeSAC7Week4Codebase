@@ -10,7 +10,17 @@ import SnapKit
 
 class MarketViewController: UIViewController {
     
-    let tableView = UITableView()
+    lazy var tableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = .orange
+        tableView.rowHeight = 60
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        tableView.register(MarketTableViewCell.self, forCellReuseIdentifier: MarketTableViewCell.identifier)
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,13 +66,7 @@ extension MarketViewController: ViewDesignProtocol {
     
     func configureView() {
         view.backgroundColor = .white
-        tableView.backgroundColor = .orange
-        tableView.rowHeight = 60
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        
-        tableView.register(MarketTableViewCell.self, forCellReuseIdentifier: MarketTableViewCell.identifier)
+
     }
     
     
