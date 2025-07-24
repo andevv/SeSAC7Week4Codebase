@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE301ABC2E31D02100BB0B0C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE301ABB2E31D02100BB0B0C /* Alamofire */; };
+		FE301AC82E31FDE700BB0B0C /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE301AC72E31FDE700BB0B0C /* Secrets.xcconfig */; };
 		FE343B132E2DE871001BB173 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FE343B122E2DE871001BB173 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE301AC72E31FDE700BB0B0C /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FE343AF52E2DC5D9001BB173 /* SeSAC7Week4Codebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC7Week4Codebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE343B132E2DE871001BB173 /* SnapKit in Frameworks */,
+				FE301ABC2E31D02100BB0B0C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +54,7 @@
 		FE343AEC2E2DC5D9001BB173 = {
 			isa = PBXGroup;
 			children = (
+				FE301AC72E31FDE700BB0B0C /* Secrets.xcconfig */,
 				FE343AF72E2DC5D9001BB173 /* SeSAC7Week4Codebase */,
 				FE343AF62E2DC5D9001BB173 /* Products */,
 			);
@@ -84,6 +89,7 @@
 			name = SeSAC7Week4Codebase;
 			packageProductDependencies = (
 				FE343B122E2DE871001BB173 /* SnapKit */,
+				FE301ABB2E31D02100BB0B0C /* Alamofire */,
 			);
 			productName = SeSAC7Week4Codebase;
 			productReference = FE343AF52E2DC5D9001BB173 /* SeSAC7Week4Codebase.app */;
@@ -115,6 +121,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FE343B112E2DE871001BB173 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FE301ABA2E31D02100BB0B0C /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE343AF62E2DC5D9001BB173 /* Products */;
@@ -131,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE301AC82E31FDE700BB0B0C /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +157,7 @@
 /* Begin XCBuildConfiguration section */
 		FE343B092E2DC5DA001BB173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE301AC72E31FDE700BB0B0C /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -156,6 +165,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSAC7Week4Codebase/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -188,6 +198,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSAC7Week4Codebase/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -354,6 +365,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FE301ABA2E31D02100BB0B0C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		FE343B112E2DE871001BB173 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -365,6 +384,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FE301ABB2E31D02100BB0B0C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE301ABA2E31D02100BB0B0C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		FE343B122E2DE871001BB173 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FE343B112E2DE871001BB173 /* XCRemoteSwiftPackageReference "SnapKit" */;

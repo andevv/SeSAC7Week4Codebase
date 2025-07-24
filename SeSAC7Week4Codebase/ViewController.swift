@@ -117,7 +117,7 @@ class ViewController: UIViewController {
         
         
         //스토리보드 없을 때
-        let vc = AuthViewController()
+        let vc = MarketViewController()
         present(vc, animated: true)
     }
 }
